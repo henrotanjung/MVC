@@ -1,5 +1,10 @@
 <?php
-class Koneksi{    
+class Koneksi{   
+    protected $host = '';
+    protected $user = '';
+    protected $pass = '';
+    protected $dabatabase = '';
+     
     public function konek($dbconfig){
         $dbconfig = (object) $dbconfig;
         $host = $dbconfig->host;
